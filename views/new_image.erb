@@ -1,0 +1,23 @@
+<h2>Add an image to the gallery <%= @gallery.name %></h2>
+
+<form action="/galleries/<%= @gallery.id %>/images" method="POST">
+
+
+<!-- Add images -->
+  <div>
+      <label for="image_name">Image Name</label> 
+      <input type="text" id="image_name" name= "image[name]"><br>
+
+      <label for="image_description">Image Description</label> 
+      <input type="text" id="image_description" name= "image[description]"><br>
+
+      <label for="image_url">Image URL</label> 
+      <input type="text" id="image_url" name= "image[url]"><br>
+
+    </div>
+    <!-- Form creates the information that then fills the params -->
+
+    <div>
+      <input type="submit" value="Add Image">
+    <div>
+</form>

@@ -1,0 +1,10 @@
+<h2>Create New Gallery</h2>
+<form action="/galleries" method="POST"> <!-- tells galleries table we want to create something -->
+  <div>
+    <label for "gallery_name"> Gallery Name</label> <!-- associates label with input -->
+    <input type="text" name="gallery[name]" id="gallery_name">
+    <!-- <input type="text" name="gallery[description]" id="gallery_description"> -->
+  </div>
+  <div>
+    <input type="submit" value="Create">
+</form>
